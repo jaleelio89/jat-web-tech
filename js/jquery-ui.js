@@ -911,14 +911,17 @@ var widgetsMouse = $.widget( "ui.mouse", {
 		// Support: IE <9
 		if ( this._mouseMoved ) {
 
-			
+			// IE mouseup check - mouseup happened when mouse was out of window
 			if ( $.ui.ie && ( !document.documentMode || document.documentMode < 9 ) &&
 					!event.button ) {
 				return this._mouseUp( event );
 
-			
+			// Iframe mouseup check - mouseup occurred in another document
 			} else if ( !event.which ) {
 
+				// Support: Safari <=8 - 9
+				// Safari sets which to 0 if you press any of the following keys
+				// during a drag (#14461)
 				if ( event.originalEvent.altKey || event.originalEvent.ctrlKey ||
 						event.originalEvent.metaKey || event.originalEvent.shiftKey ) {
 					this.ignoreMissingWhich = true;
@@ -991,7 +994,23 @@ var widgetsMouse = $.widget( "ui.mouse", {
 } );
 
 
+/*!
+ * jQuery UI Slider 1.12.1
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
 
+//>>label: Slider
+//>>group: Widgets
+//>>description: Displays a flexible slider with ranges and accessibility via keyboard.
+//>>docs: http://api.jqueryui.com/slider/
+//>>demos: http://jqueryui.com/slider/
+//>>css.structure: ../../themes/base/core.css
+//>>css.structure: ../../themes/base/slider.css
+//>>css.theme: ../../themes/base/theme.css
 
 
 
@@ -1025,7 +1044,8 @@ var widgetsSlider = $.widget( "ui.slider", $.ui.mouse, {
 		stop: null
 	},
 
-	
+	// Number of pages in a slider
+	// (how many times can you page up/down to go through the whole range)
 	numPages: 5,
 
 	_create: function() {
@@ -1105,7 +1125,7 @@ var widgetsSlider = $.widget( "ui.slider", $.ui.mouse, {
 			} else {
 				this._removeClass( this.range, "ui-slider-range-min ui-slider-range-max" );
 
-				
+				// Handle range switching from true to min/max
 				this.range.css( {
 					"left": "",
 					"bottom": ""
