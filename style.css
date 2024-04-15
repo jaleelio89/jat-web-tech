@@ -1,0 +1,113 @@
+/* Global Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #007bff; /* Blue background */
+}
+
+header {
+  background-color: #333; /* Dark grey header background */
+  color: #fff;
+  padding: 10px 0;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+  background-color: #fff; /* White container background */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #333; /* Dark grey footer background */
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Page-Specific Styles */
+h1 {
+  color: #333; /* Dark grey heading color */
+}
+
+p {
+  color: #555; /* Grey paragraph color */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #007bff; /* Blue link color */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Carousel Styles */
+.carousel-item img {
+  width: 100%;
+  height: 400px; /* Adjust the height as needed */
+  object-fit: cover; /* Ensure the image covers the entire slide */
+}
+
+.carousel-indicators {
+  bottom: 10px; /* Adjust the position of the indicators */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; /* Adjust the size of the controls */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  /* Customize the appearance of the control icons */
+  width: 30px;
+  height: 30px;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+.carousel-control-prev-icon {
+  margin-left: -15px;
+}
+
+.carousel-control-next-icon {
+  margin-right: -15px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.5); /* Change the hover background color */
+}
