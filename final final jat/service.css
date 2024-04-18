@@ -1,0 +1,78 @@
+header {
+    background-color: #2aa3a3; 
+    color: #fff;
+    padding: 20px 0; 
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+        
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('Bank.jpg');
+  background-size: cover;
+}
+
+
+.header {
+    background-color: #0CBD1F; 
+    color: #ffffff; 
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+}
+.service-icon {
+    color: rgb(46, 163, 163);
+}
+
+
+.services-section {
+    background-color: #FDFEFE;
+    padding: 50px 0;
+}
+
+.service-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #FFFAFA;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-title {
+    font-size: 24px;
+    color: #000000; 
+    margin-bottom: 10px;
+}
+
+.service-description {
+    font-size: 16px;
+    color: #666666;
+}
+footer {
+    background-color: #2aa3a3; /* Changed footer background color */
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }

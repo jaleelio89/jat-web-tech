@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loan Sign-Up - JAT Banking and Finance</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="loans.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <header>
+    <div class="header-left">
+      <h2>JAT</h2>
+    </div>
+    <div class="header-right">
+      <nav>
+        <ul>
+        <li><a href="main.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="loans.html">Loans</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="loan_signup.html">Loan Sign-Up</a></li>
+        <li><a href="email_subscription.html">Email Subscription</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    
+        <div class="loan-form-container">
+    <h1>Loan Sign-Up</h1>
+    <p>Sign up for a loan with JAT Banking and Finance.</p>
+    
+    <form action="/submit_loan_signup" method="post" class="loan-form">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br>
+      <label for="phone">Phone:</label><br>
+      <input type="text" id="phone" name="phone"><br>
+      <label for="gender">Gender:</label><br>
+      <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select><br>
+      <label for="national_id">National ID/Passport Number:</label><br>
+      <input type="text" id="national_id" name="national_id"><br>
+      <label for="loan_type">Loan Type:</label><br>
+      <select id="loan_type" name="loan_type">
+        <option value="personal_loan">Personal Loan</option>
+        <option value="home_loan">Home Loan</option>
+        <option value="business_loan">Business Loan</option>
+      </select><br>
+      <label for="amount">Loan Amount:</label><br>
+      <input type="text" id="amount" name="amount"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 JAT Banking and Finance</p>
+    <div>
+      <a href="#!" class="text-white me-4">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#!" class="text-white me-4">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#!" class="text-white me-4">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="#!" class="text-white">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </div>
+  <footer>
+    
+
+</body>
+</html>

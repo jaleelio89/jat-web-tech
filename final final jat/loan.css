@@ -1,0 +1,57 @@
+header {
+    background-color: #2aa3a3; 
+    color: #fff;
+    padding: 20px 0; 
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('Bank.jpg');
+    background-size: cover;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+h2 {
+    color: #333;
+}
+.loan {
+    margin-bottom: 20px;
+}
+.loan h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+.loan p {
+    margin-bottom: 5px;
+}
+footer {
+    background-color: #2aa3a3; 
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
